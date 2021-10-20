@@ -1,4 +1,3 @@
-package com.company;
 // Task 1 : Can we pop a brick(a,b,c) into a hole(x,y)
 public class Brick_TASK {
 
@@ -15,7 +14,7 @@ public class Brick_TASK {
                 || ((x>=a) && (y>=c))||((y>=c) && (y>=a))
                 || ((x>=c)&& (y>=b))||((x>=b) && (y>=c))   )
         {
-            System.out.println("Ok");
+            System.out.println("Ok!");
         }
         else
         {
