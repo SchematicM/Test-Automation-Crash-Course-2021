@@ -47,16 +47,11 @@ public class Number_TASK {
         System.out.println("A = " + a);
         char [] charArray_a = Integer.toString(a).toCharArray();
 // TASK1
+        System.out.println("TASK 1: Is number 3 in squared number?");
         int a2 = (int)Math.pow(a,2);
         System.out.println("A*A = " + a2);
 
         char [] charArray = Integer.toString(a2).toCharArray();
-        /*
-        for (char el: charArray)
-        {
-            System.out.print(el + " ");
-        }
-        */
 
         int count =0;
         for (int i = 0;i<charArray.length; i++){
@@ -81,14 +76,10 @@ public class Number_TASK {
         }
 
         //TASK2
+        System.out.println("TASK 2: Reverse number.");
 
         char [] rev = Number_TASK.reverse(charArray_a);
-        /*
-        for (char el: rev)
-        {
-            System.out.print(el + " ");
-        }
-        */
+
         String rev_str= new String();
         for (char el: rev)
         {
@@ -98,14 +89,10 @@ public class Number_TASK {
         System.out.println(reversed);
 
         //TASK3
+        System.out.println("TASK 3: Change first and last digit in number.");
+
         char [] swap = Number_TASK.swapFIRST_and_Last(charArray_a);
 
-/*
-                for (char el: swap)
-        {
-            System.out.print(el + " ");
-        }
-*/
         String swap_str= new String();
         for (char el: swap)
         {
@@ -115,13 +102,10 @@ public class Number_TASK {
         System.out.println(swapped);
 
         //TASK4
+        System.out.println("TASK 4: Add '1' on begining and end of number.");
+
         char [] add = Number_TASK.add_one(charArray_a);
 
-
-   /*             for (char el: add)
-        {
-            System.out.print(el + " ");
-        }*/
 
         String add_str= new String();
         for (char el: add)
