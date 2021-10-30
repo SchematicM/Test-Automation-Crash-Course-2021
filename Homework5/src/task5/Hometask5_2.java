@@ -7,19 +7,22 @@ public class Hometask5_2 {
             if(i.getName() == b) count++;
         return count;
     }
-static  void Check_sameName(Dog [] mas)
+static  boolean Check_sameName(Dog [] mas)
     {
+        boolean ch = false;
         int count = 0;
         for(Dog dog : mas) {
             if (getCount(mas, dog.getName()) > 1) {count++;
                 System.out.println("We have dogs with the same names");
+                ch = true;
                 break;
             }
         }
         if(count == 0)
             System.out.println("All names are unique!");
+        return ch;
     }
-    static void MaxAge(Dog[] dogs)
+    static int MaxAge(Dog[] dogs)
     {
         int max = dogs[0].getAge();
         for (int i = 0; i<dogs.length; i++)
@@ -39,6 +42,7 @@ static  void Check_sameName(Dog [] mas)
                 System.out.println(dog.getName() + "  "+dog.getBreed()+" is the oldest dog");
             }
         }
+        return max;
     }
 
     public static void main(String[] args) {
